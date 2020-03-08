@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Security Settings -->
+    <PreferenceCategory 
+        android:title="@string/security_heading"
+        android:key="security_prefs">
+        <CheckBoxPreference
+            android:key="password_pref"
+            android:summary="@string/password_info"
+            android:title="@string/password_title"
+            android:defaultValue="false" />
+        <EditTextPreference 
+            android:key="set_password_pref"
+            android:summary=""
+            android:title="@string/set_password_title"
+            android:defaultValue="" 
+            android:maxLength="20"
+            android:inputType="textPassword" 
+            android:dependency="password_pref"/>
+        <CheckBoxPreference
+            android:key="pin_pref"
+            android:summary="@string/pin_info"
+            android:title="@string/pin_title"
+            android:defaultValue="false" />
+        <EditTextPreference 
+            android:key="set_pin_pref"
+            android:summary=""
+            android:title="@string/set_pin_title"
+            android:defaultValue="" 
+            android:maxLength="4"
+            android:inputType="phone"
+            android:password="true"
+            android:dependency="pin_pref" />
+        <!-- password or pin -->
+        <MultiSelectListPreference 
+			android:dialogTitle="@string/password_pin_pref"
+	        android:key="password_pin_pref"
+	        android:summary=""        
+	        android:title="@string/password_pin_pref"
+	        android:entries="@array/pw_or_pin"
+	        android:entryValues="@array/pw_or_pin_values"
+	        android:defaultValue="@array/empty_array" />   
+        <!-- /password or pin --> 
+	</PreferenceCategory>
+        
+    <!-- Flash Settings -->
+	<PreferenceCategory 
+		android:title="@string/flash_heading"
+        android:key="flash_user_prefs">
+        <EditTextPreference 
+            android:key="flash_delay_pref"
+            android:summary="@string/delay_info"
+            android:title="@string/delay_title"
+            android:defaultValue="" />
+        <CheckBoxPreference
+            android:key="save_pref"
+            android:summary="@string/save_info"
+            android:title="@string/save_title"
+            android:defaultValue="false" />
+	</PreferenceCategory>
+</PreferenceScreen>

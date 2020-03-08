@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="pw_or_pin">
+        <item>Password</item>
+        <item>Pin</item>
+    </string-array>
+    
+	<string-array name="pw_or_pin_values">
+        <item>pw_value</item>
+        <item>pin_value</item>
+    </string-array>
+    
+	<string-array name="empty_array"/>
+</resources>

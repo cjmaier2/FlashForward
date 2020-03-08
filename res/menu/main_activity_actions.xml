@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- camera -->
+    <item android:id="@+id/action_camera"
+          android:icon="@drawable/ic_action_camera"
+          android:title="@string/action_search"
+          android:showAsAction="ifRoom" />
+    <!-- settings -->
+    <item android:id="@+id/action_settings"
+          android:icon="@drawable/ic_action_settings"
+          android:title="@string/action_settings"
+          android:showAsAction="always" />
+
+</menu>
